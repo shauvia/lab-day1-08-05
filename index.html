@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Ewa's page</title>
+    <style>
+      #lab {
+        background-color: aqua;
+        color:brown;
+        text-decoration: underline;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Ewa's Page</h1>
+    </header>
+      
+    <main>
+
+        <h1 id="lab">Class 1 Lab</h1>
+        
+      <article>
+        <p style="color:cadetblue; background-color:chartreuse;" >This is my wonderful page that's gonna ask you thousands of questions.</p>
+        <p>No pictures just questions</p>
+
+      </article>
+
+      <article>
+        <p style="color:rgb(30, 25, 51); background-color:rgb(180, 112, 23);">A bit in Polish. Use google translate to find out what it means</p>
+
+        <h4>Polish bit: Użyłeś translatora już?</h4>
+
+        <p style="color:hotpink; background-color:rgb(23, 180, 88);">What is your name dear patient user?</p>
+        <p style="color:rgb(185, 46, 70); background-color:rgb(61, 39, 187);">Where are you from?</p>
+        <p style="color:rgb(71, 161, 116); background-color:rgb(113, 178, 221);">What is you favorite dish?</p>
+        <p style="color:rgb(131, 167, 32); background-color:rgb(104, 23, 180);">Do you like potatoes? Please write 'Yes' ot 'No'.</p>
+      </article>
+
+      <footer>
+        &copy; 2019 Ewa
+        <h6>No pictures here, too!<h6>
+      </footer>
+
+      <script>
+        var uName = prompt("What is your name dear patient user?"); 
+
+        alert('Hello ' + uName + ' my patient user!');
+
+        console.log(uName);
+
+        var country = prompt("Where are you from?");
+
+        alert("Are you " + uName + " really from " + country + "? Cool!");
+
+        console.log(uName + " from " + country)
+
+        var dish = prompt("What is you favorite dish?");
+
+        alert("Dear " + uName + " from " + country + ". I like " + dish + " too!");
+
+        console.log(uName + " from " + country + " likes " + dish)
+
+        var favorFood = prompt("Do you like potatoes? Please write 'Yes' ot 'No'.");
+
+        if (favorFood === 'Yes') {
+          alert(uName + " from " + country + " eating " + dish + ", you must be Polish too because you like potatoes")
+        } else {
+          alert("You are not Polish. You don't like potatoes")
+        }
+
+        console.log("User's answer:" + favorFood + '.' + ' User likes or dislikes potatoes')
+        
+        
+      </script> 
+      
+
+
+    </main>
+
+    
+  </body>
+
+</html>
